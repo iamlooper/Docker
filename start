@@ -1,0 +1,14 @@
+#!bin/sh
+# Starter
+
+# Clone repo provided by var
+git clone -q "$UPSTREAM_REPO" app
+
+# Go to output directory
+cd app
+
+# Install requirements
+pip -q install --no-cache-dir -r requirements.txt
+
+# Run app
+bash run
